@@ -1,0 +1,23 @@
+[
+  {
+    "group": "Internacional",
+    "name": "Canal Español",
+    "logo": "https://example.com/logos/canalespanol.png",
+    "tvg_id": "canalesp",
+    "url": "http://stream.example.com/live/canalespanol.m3u8"
+  },
+  {
+    "group": "Japanese",
+    "name": "Nippon TV",
+    "logo": "",
+    "tvg_id": "nippon_tv",
+    "url": "http://stream.example.com/live/nippon_tv.m3u8"
+  },
+  {
+    "group": "K-Pop 🎤",
+    "name": "Music Bank",
+    "logo": "",
+    "tvg_id": "musicbank",
+    "url": "http://stream.example.com/live/musicbank.m3u8"
+  }
+]

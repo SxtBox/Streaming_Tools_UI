@@ -1,0 +1,97 @@
+[
+  {
+    "group": "News",
+    "name": "Global News",
+    "logo": "https://example.com/logos/globalnews.png",
+    "tvg_id": "globalnews.int",
+    "url": "http://stream.example.com/live/globalnews.m3u8"
+  },
+  {
+    "group": "Sports",
+    "name": "SportZone 1",
+    "logo": "https://example.com/logos/sportzone1.png",
+    "tvg_id": "sportzone1",
+    "url": "http://stream.example.com/live/sportzone1.m3u8"
+  },
+  {
+    "group": "Sports",
+    "name": "SportZone 2",
+    "logo": "https://example.com/logos/sportzone2.png",
+    "tvg_id": "sportzone2",
+    "url": "http://stream.example.com/live/sportzone2.m3u8"
+  },
+  {
+    "group": "Movies",
+    "name": "MovieTime",
+    "logo": "https://example.com/logos/movietime.png",
+    "tvg_id": "movietime",
+    "url": "http://stream.example.com/live/movietime.m3u8"
+  },
+  {
+    "group": "Movies",
+    "name": "CinemaPlus",
+    "logo": "",
+    "tvg_id": "",
+    "url": "http://stream.example.com/live/cinemaplus.m3u8"
+  },
+  {
+    "group": "Kids",
+    "name": "Kids World",
+    "logo": "https://example.com/logos/kidsworld.png",
+    "tvg_id": "kidsworld",
+    "url": "http://stream.example.com/live/kidsworld.m3u8"
+  },
+  {
+    "group": "Music",
+    "name": "Pop Hits",
+    "logo": "https://example.com/logos/pophits.png",
+    "tvg_id": "pophits",
+    "url": "http://stream.example.com/live/pophits.m3u8"
+  },
+  {
+    "group": "Music",
+    "name": "Rock Arena",
+    "logo": "",
+    "tvg_id": "",
+    "url": "http://stream.example.com/live/rockarena.m3u8"
+  },
+  {
+    "group": "Documentary",
+    "name": "DocuWorld",
+    "logo": "https://example.com/logos/docuworld.png",
+    "tvg_id": "docuworld",
+    "url": "http://stream.example.com/live/docuworld.m3u8"
+  },
+  {
+    "group": "Lifestyle",
+    "name": "Home & Living",
+    "logo": "",
+    "tvg_id": "homeandliving",
+    "url": "http://stream.example.com/live/homeandliving.m3u8"
+  },
+  {
+    "name": "Travel Now",
+    "url": "http://stream.example.com/live/travelnow.m3u8"
+  },
+  {
+    "group": "General",
+    "name": "Universal TV",
+    "logo": "",
+    "tvg_id": "",
+    "url": "http://stream.example.com/live/universaltv.m3u8"
+  },
+  {
+    "group": "Comedy",
+    "name": "Comedy King",
+    "logo": "https://example.com/logos/comedyking.png",
+    "tvg_id": "comedyking",
+    "url": "http://stream.example.com/live/comedyking.m3u8"
+  },
+  {
+    "group": "Adult",
+    "name": "Night Zone",
+    "logo": "",
+    "tvg_id": "",
+    "url": "http://stream.example.com/live/nightzone.m3u8"
+  }
+]

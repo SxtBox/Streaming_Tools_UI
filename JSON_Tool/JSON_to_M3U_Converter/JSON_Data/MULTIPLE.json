@@ -1,0 +1,23 @@
+[
+  {
+    "group": "Sports",
+    "name": "Sports Channel HD",
+    "logo": "https://example.com/sports.png",
+    "tvg_id": "sports1.us",
+    "url": "http://stream.example.com/live/sports1.m3u8"
+  },
+  {
+    "group": "Movies",
+    "name": "Movie Star",
+    "logo": "https://example.com/movies.png",
+    "tvg_id": "moviestar.us",
+    "url": "http://stream.example.com/live/movies.m3u8"
+  },
+  {
+    "group": "Kids",
+    "name": "Cartoon World",
+    "logo": "https://example.com/kids.png",
+    "tvg_id": "cartoonworld.us",
+    "url": "http://stream.example.com/live/kids.m3u8"
+  }
+]
