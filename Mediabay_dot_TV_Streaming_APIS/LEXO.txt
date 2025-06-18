@@ -1,0 +1,46 @@
+THIS IS ONE OF ALL MAIN_Generate_Streams.php
+RUN MAIN_Generate_Streams.php AND THEN RUN OTHERS [PHP FILES]
+
+To run your PHP script every day using a cron job, follow these steps
+
+ 1. Edit the Crontab
+Run this in the terminal:
+
+crontab -e
+This opens your crontab file in an editor.
+
+2. Add a Daily Cron Job
+To run the PHP script once per day at 2:00 AM, add:
+
+0 2 * * * /usr/bin/php /full/path/to/your/script.php >> /full/path/to/log.txt 2>&1
+Explanation:
+0 2 * * * = At 02:00 AM every day
+
+/usr/bin/php = Path to PHP (check it with which php)
+
+/full/path/to/your/script.php = Full absolute path to your script
+
+>> /full/path/to/log.txt 2>&1 = Appends output and errors to log.txt (optional but recommended)
+
+3. Find Your PHP Path
+Run:
+which php
+Example output:
+
+/usr/bin/php
+Use that in the crontab.
+
+4. Make Your Script Executable (Optional)
+If you want to run it directly:
+
+chmod +x /full/path/to/script.php
+Then in crontab:
+
+0 2 * * * /full/path/to/script.php >> /path/to/log.txt 2>&1
+But for this, the script must start with:
+
+#!/usr/bin/php
+Example
+If your script is in /home/olci/scripts/fetch_streams.php and PHP is at /usr/bin/php:
+
+0 2 * * * /usr/bin/php /home/olci/scripts/fetch_streams.php >> /home/olci/scripts/log.txt 2>&1

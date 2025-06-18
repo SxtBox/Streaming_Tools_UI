@@ -1,0 +1,285 @@
+[
+    {
+        "name": "MediaBay",
+        "slug": "Streams",
+		"url": "https://api.mediabay.tv/v2/channels/thread/CHANNEL_NAME",
+        "method": "GET",
+        "pattern": "<source.*?src=\"(.*?)\"",
+        "expire_duration": "1D",
+        "mode": "variant",
+        "output_filter": "token",
+        "headers": {},
+        "channels": [
+            {
+                "name": "nrbtv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "420"
+                    }
+                ]
+            },
+            {
+                "name": "arezo",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "569"
+                    }
+                ]
+            },
+            {
+                "name": "tolotv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "576"
+                    }
+                ]
+            },
+            {
+                "name": "tolonews",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "577"
+                    }
+                ]
+            },
+            {
+                "name": "noortv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "588"
+                    }
+                ]
+            },
+            {
+                "name": "real-tv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "475"
+                    }
+                ]
+            },
+            {
+                "name": "arb",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "571"
+                    }
+                ]
+            },
+            {
+                "name": "arb-24",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "572"
+                    }
+                ]
+            },
+            {
+                "name": "az-tv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "114"
+                    }
+                ]
+            },
+            {
+                "name": "ictimai-tv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "90"
+                    }
+                ]
+            },
+            {
+                "name": "xezer-tv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "104"
+                    }
+                ]
+            },
+            {
+                "name": "medeniyet-tv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "90"
+                    }
+                ]
+            },
+            {
+                "name": "atv-azad",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "86"
+                    }
+                ]
+            },
+            {
+                "name": "cbc",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "154"
+                    }
+                ]
+            },
+            {
+                "name": "music-kg",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "560"
+                    }
+                ]
+            },
+            {
+                "name": "ilim-bilim",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "611"
+                    }
+                ]
+            },
+            {
+                "name": "ala-too-24",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "621"
+                    }
+                ]
+            },
+            {
+                "name": "pyramida",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "655"
+                    }
+                ]
+            },
+            {
+                "name": "oshpirim",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "697"
+                    }
+                ]
+            },
+            {
+                "name": "eltr-kg",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "162"
+                    }
+                ]
+            },
+            {
+                "name": "24kz",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "439"
+                    }
+                ]
+            },
+            {
+                "name": "novoetv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "467"
+                    }
+                ]
+            },
+            {
+                "name": "kazakhfilms",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "545"
+                    }
+                ]
+            },
+            {
+                "name": "jibek-joly",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "682"
+                    }
+                ]
+            },
+            {
+                "name": "muzzone",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "702"
+                    }
+                ]
+            },
+            {
+                "name": "atameken",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "407"
+                    }
+                ]
+            },
+            {
+                "name": "Таджикская Музыка",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "495"
+                    }
+                ]
+            },
+            {
+                "name": "Таджикские фильмы",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "544"
+                    }
+                ]
+            },
+            {
+                "name": "varzish",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "596"
+                    }
+                ]
+            },
+            {
+                "name": "aqlvoy",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "645"
+                    }
+                ]
+            }
+        ]
+    }
+]
