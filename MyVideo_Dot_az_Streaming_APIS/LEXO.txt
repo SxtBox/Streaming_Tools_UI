@@ -1,25 +1,46 @@
 THIS IS ONE OF ALL MAIN_Generate_Streams.php
 RUN MAIN_Generate_Streams.php AND THEN RUN OTHERS [PHP FILES]
 
-"pattern": "<source.*?src=\"(.*?)\"",
-https://rubular.com/r/5opTU1Dvy1Yyzu
+To run your PHP script every day using a cron job, follow these steps
 
-<source[^>]+src=\"([^\"]+\.m3u8[^\"]*)\"
+ 1. Edit the Crontab
+Run this in the terminal:
 
-config.json
-"mode": "master",
-OUTPUT
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=800000
-http://149.255.152.199/xazer.m3u8?user=37076&token=0cdc86ad3205f934c47f9a7844373f46&e=1750300640&bands=796.2096&sid=coder_53
+crontab -e
+This opens your crontab file in an editor.
 
-config.json
-"mode": "variant",
-OUTPUT
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=6096000
-http://149.255.152.199/arbhd.m3u8?bandwidth=6096&e=1750300828&playlistlength=5&shift=0&sid=coder_62&token=a74e03fa1f3aa1d5f486fec05cc0bf1b&user=37076
-#EXT-X-STREAM-INF:BANDWIDTH=796000
-http://149.255.152.199/arbhd.m3u8?bandwidth=796&e=1750300828&playlistlength=5&shift=0&sid=coder_62&token=a74e03fa1f3aa1d5f486fec05cc0bf1b&user=37076
+2. Add a Daily Cron Job
+To run the PHP script once per day at 2:00 AM, add:
+
+0 2 * * * /usr/bin/php /full/path/to/your/script.php >> /full/path/to/log.txt 2>&1
+Explanation:
+0 2 * * * = At 02:00 AM every day
+
+/usr/bin/php = Path to PHP (check it with which php)
+
+/full/path/to/your/script.php = Full absolute path to your script
+
+>> /full/path/to/log.txt 2>&1 = Appends output and errors to log.txt (optional but recommended)
+
+3. Find Your PHP Path
+Run:
+which php
+Example output:
+
+/usr/bin/php
+Use that in the crontab.
+
+4. Make Your Script Executable (Optional)
+If you want to run it directly:
+
+chmod +x /full/path/to/script.php
+Then in crontab:
+
+0 2 * * * /full/path/to/script.php >> /path/to/log.txt 2>&1
+But for this, the script must start with:
+
+#!/usr/bin/php
+Example
+If your script is in /home/olci/scripts/fetch_streams.php and PHP is at /usr/bin/php:
+
+0 2 * * * /usr/bin/php /home/olci/scripts/fetch_streams.php >> /home/olci/scripts/log.txt 2>&1
