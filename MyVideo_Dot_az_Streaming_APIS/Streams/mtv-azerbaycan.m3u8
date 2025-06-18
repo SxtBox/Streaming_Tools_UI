@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=6096000
+http://149.255.152.199/mtvazerbaycan.m3u8?bandwidth=6096&e=1750303063&playlistlength=5&shift=0&sid=coder_51&token=e8a827e647eea52fb3ab538d61a58c9b&user=37076
